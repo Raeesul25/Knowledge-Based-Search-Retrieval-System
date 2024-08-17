@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Search Documents</h2>
+<form method="post">
+    <label for="query">Enter search query:</label>
+    <input type="text" name="query" required><br>
+    <button type="submit">Search</button>
+</form>
+
+{% if results %}
+    <h3>Search Results:</h3>
+    <ul>
+    {% for result in results %}
+        <li>
+            <strong>{{ result.report_name }}</strong><br>
+            Report Type: {{ result.report_type }}<br>
+            Similarity: {{ result.similarity }}<br>
+            <a href="{{ url_for('static', filename=result.file_path) }}">Download PDF</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
