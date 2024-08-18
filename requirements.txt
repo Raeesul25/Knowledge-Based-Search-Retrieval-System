@@ -7,6 +7,8 @@ pdf2image
 chromadb
 pinecone-client
 faiss-cpu
+langchain_pinecone 
+pinecone 
 Flask
 pymongo
 PyPDF2
