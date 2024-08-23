@@ -8,12 +8,15 @@
 
 .container{
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)),
     url('../static/images/background.png');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 nav{
@@ -309,6 +312,9 @@ button[type="submit"]:hover {
 .output{
     text-align: left;
     padding: 10px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .output p{
