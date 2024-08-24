@@ -312,7 +312,7 @@ button[type="submit"]:hover {
 .output{
     text-align: left;
     padding: 10px;
-    height: 400px;
+    max-height: 400px;
     overflow-x: hidden;
     overflow-y: auto;
 }
